@@ -1,4 +1,4 @@
-function TouchForm() {
+function TodoForm() {
   return (
     <form>
       <label htmlFor="todoTitle">Todo</label>
@@ -10,4 +10,4 @@ function TouchForm() {
   );
 }
 
-export default TouchForm;
+export default TodoForm;
