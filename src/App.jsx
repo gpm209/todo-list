@@ -1,19 +1,13 @@
 import "./App.css";
+import TodoList from "./TodoList.jsx";
+import TouchForm from "./TouchForm.jsx";
 
 function App() {
-  const todoList = [
-    { id: 1, title: "Go over lesson" },
-    { id: 2, title: "Go to group session" },
-    { id: 3, title: "Work on assignments" },
-  ];
   return (
     <div>
-      <h1>My Todos</h1>
-      <ul>
-        {todoList.map((todo) => (
-          <li key={todo.id}>{todo.title}</li>
-        ))}
-      </ul>
+      <h1>Todo List</h1>
+      <TouchForm />
+      <TodoList />
     </div>
   );
 }
